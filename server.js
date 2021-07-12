@@ -5,10 +5,6 @@ app.listen(PORT, () => {
 });
 const app = express();
 
-app.listen(3001, () => {
-  console.log("API server now on port 3001!");
-});
-
 const { animals } = require("./data/animals");
 
 app.get("/api/animals", (req, res) => {
